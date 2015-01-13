@@ -1,0 +1,275 @@
+/* --------------------------------------
+   Imports
+   -------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+/* --------------------------------------
+   Sprites
+   -------------------------------------- */
+
+ul.menu {
+        list-style-type: none;
+        margin-left: -40px;
+        margin-top: -20px;
+    }
+
+ul.menu {
+        list-style-type: none;
+        margin-top: 20px;
+        min-width: 360px;
+    }
+
+ul.menu li {
+        float: left;
+        padding: 5px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+ul.menu li a {
+        height: 48px;
+        width: 48px;
+        display: inline-block;
+        border-radius: 50%;
+        background: url("../../images/icons.jpg") no-repeat; /* As all link share the same background-image */
+    }
+
+ul.menu li a:hover {
+      background: url("../../images/icons-hover.jpg") no-repeat;   
+}
+
+ul.menu li#apple a {
+        background-position: -2px -4px;
+    }
+ul.menu li#android a {
+        background-position: -71px -4px;
+    }
+ul.menu li#windows a {
+        background-position: -138px -2px;
+    }
+
+ul.menu li#apple a:hover {
+        background-position: -2px -4px;
+    }
+ul.menu li#android a:hover {
+        background-position: -71px -4px;
+    }
+    ul.menu li#windows a:hover {
+        background-position: -138px -2px;
+    }
+
+#small-sprite {
+        display: table;
+        margin: 0 auto;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;  
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+header {
+     position: relative;
+     border-top: 5px solid #2ecc71;
+}
+
+header img {
+     width: 100%;
+     min-height: 123px;
+}
+
+.header-content {
+    position: absolute;
+    font-family: 'Myriad Pro', sans-serif;
+    top: 25%;
+    left: 20%;
+}
+
+#features-cont {
+     margin: 0 7.5%   
+}
+
+#notify {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 400%;
+    color: #fff;
+}
+
+#dot {
+    color: #2ecc71;   
+}
+
+#header-text{
+    margin-top: 8%;
+    color: #fff;
+    font-size: 150%;
+    
+}
+
+.header-content-small {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+#notify-small {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 250%;
+    color: #fff;
+}
+
+#header-text-small {
+    margin-top: 2%;
+    color: #fff;
+    font-size: 100%;
+    
+}
+
+#features {
+     clear: both;
+     text-align: center;
+     font-size: 120%;
+     margin: 3% 0;
+}
+
+#features .thumbnail {
+     border: 0; 
+}
+
+#get-notified {
+     clear: both;
+     background-color: #e3e3e3;
+     padding: 3% 10.45%;
+     max-width: 5000px;
+}
+
+input[type="email"]  {
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     height: 40px;
+     font-size: 125%;
+     border: 0;
+}
+
+input[placeholder] {
+     padding-left: 15px;
+}
+
+#notify-button {
+     border-top-left-radius: 0;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 0;
+     height: 42px;
+     font-size: 130%;
+     margin: -1px 0 0 -4px;
+     background-color: #2ecc71;
+     border-color: #2ecc71 
+}
+
+#testimonials {
+     list-style-type: none;
+     margin-left: -60px;
+}
+
+ul#people li {
+     display: inline; 
+}
+
+ul#people img {
+     width: 45px;   
+}
+
+#get-in-touch {
+     margin: 2% auto;   
+}
+
+
+ul#social-icons {
+     list-style-type: none;
+     margin-left: 31%;
+}
+
+ul#social-icons li a {
+     float: left;
+     width: 42px;
+     height: 38px;
+     border-radius: 50%;
+     background: url(../../images/social.png) center no-repeat;    
+}
+
+ul#social-icons li a:hover {
+     background: url(../../images/social-hover.png) center no-repeat;
+}
+
+footer {
+     background-color: #e3e3e3;  
+     padding: 0 30%;
+     clear: both;
+}
+
+ul.foot-nav {
+     list-style-type: none;
+     margin-top: 3%;
+}
+
+ul.foot-nav li {
+     display: inline; 
+     padding: 7px;
+}
+
+ul.foot-nav li a {
+     color: gray;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+    ul#social-icons {
+         margin-left: 0;
+    }
+
+    .vimeo {
+         visibility: hidden;   
+    }
+    
+    .left {
+         width: 100%;   
+    }
+    
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+    ul#social-icons {
+         margin-left: 0;
+    }
+    
+    .vimeo {
+         visibility: hidden;   
+    }
+    
+    .left {
+         width: 100%;   
+    }
+    
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+}
